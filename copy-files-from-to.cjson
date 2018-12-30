@@ -1,6 +1,7 @@
 {
     "settings": {
-        "addLinkToSourceOfOrigin": true
+        "addReferenceToSourceOfOrigin": true,
+        "whenFileExists": "notify-about-available-changes"
     },
     "copyFiles": [
         {
@@ -180,21 +181,27 @@
             "from": {
                 "default": {
                     "src": "node_modules/codemirror/lib/codemirror.js",
-                    "uglify": true,
                     "latest": "https://unpkg.com/codemirror/lib/codemirror.js"
                 }
             },
-            "to": "extension/scripts/3rdparty/codemirror/codemirror.js"
+            "to": {
+                "default": {
+                    "dest": "extension/scripts/3rdparty/codemirror/codemirror.js"
+                }
+            }
         },
         {
             "from": {
                 "default": {
                     "src": "https://raw.githubusercontent.com/CSSLint/csslint/v1.0.5/dist/csslint.js",
-                    "uglify": true,
                     "latest": "https://raw.githubusercontent.com/CSSLint/csslint/master/dist/csslint.js"
                 }
             },
-            "to": "extension/scripts/3rdparty/csslint/csslint.js"
+            "to": {
+                "default": {
+                    "dest": "extension/scripts/3rdparty/csslint/csslint.js"
+                }
+            }
         },
         {
             "from": {
@@ -203,7 +210,11 @@
                     "latest": "https://raw.githubusercontent.com/prettydiff/prettydiff/master/lib/csspretty.js"
                 }
             },
-            "to": "extension/scripts/3rdparty/csspretty/csspretty.js"
+            "to": {
+                "default": {
+                    "dest": "extension/scripts/3rdparty/csspretty/csspretty.js"
+                }
+            }
         },
         {
             "from": {
