@@ -1,7 +1,7 @@
 {
     "settings": {
-        "addReferenceToSourceOfOrigin": true,
-        "whenFileExists": "notify-about-available-changes"
+        // "whenFileExists": "notify-about-available-change",
+        "addReferenceToSourceOfOrigin": true
     },
     "copyFiles": [
         {
